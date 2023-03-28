@@ -11,6 +11,12 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
+###addiotanl info 
+
+path = './Render-Test/core/'
+if path not in sys.path:
+  sys.path.append(path)
+
 ##os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')
 os.environ['DJANGO_SETTINGS_MODULE'] = 'core.settings'
 
